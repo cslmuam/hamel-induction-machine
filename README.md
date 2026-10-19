@@ -78,3 +78,8 @@ cd lean && lake exe cache get && lake build
 The Lean project pins Lean 4.34.0 in `lean/lean-toolchain` and mathlib at commit
 `db1c5741da0acf96c97584de6ccf0e3bfbc0ae99` in `lean/lake-manifest.json`. `lake build` fetches
 mathlib, which is distributed under the Apache 2.0 licence.
+
+## Licence
+
+The files of this repository are released under the MIT licence, in `LICENSE`. The Lean project
+depends on mathlib, which is released under the Apache 2.0 licence.
