@@ -1,0 +1,91 @@
+------------------------------------------------------------------------------
+R1  THE EXTENDED FRAME ON R x Q
+------------------------------------------------------------------------------
+frame matrix is invertible, det = 4/27
+non-vanishing structure functions c^k_ij, listed as {i,j,k} -> c:
+    {0, 1, 2} -> -Derivative[1][th0][tt]
+    {0, 2, 1} -> Derivative[1][th0][tt]
+    {0, 4, 5} -> -Derivative[1][th0][tt]
+    {0, 5, 4} -> Derivative[1][th0][tt]
+    {1, 0, 2} -> Derivative[1][th0][tt]
+    {2, 0, 1} -> -Derivative[1][th0][tt]
+    {4, 0, 5} -> Derivative[1][th0][tt]
+    {4, 7, 5} -> -1
+    {5, 0, 4} -> -Derivative[1][th0][tt]
+    {5, 7, 4} -> 1
+    {7, 4, 5} -> 1
+    {7, 5, 4} -> -1
+R1  count: structure functions involving v3 or v6 (indices 3, 6) = 0
+R1  count: departures of the seven-field block from Theorem 3.3 = 0
+------------------------------------------------------------------------------
+R2  CONSTANCY OF THE STRUCTURE FUNCTIONS
+------------------------------------------------------------------------------
+the set of values taken by the structure functions: {-1, 1, -Derivative[1][th0][tt], Derivative[1][th0][tt]}
+R2  count: values depending on a configuration variable of Q = 0
+R2  the only non-constant value is the frame rate; d/dt of each value:
+    d/dt(-1) = 0
+    d/dt(1) = 0
+    d/dt(-Derivative[1][th0][tt]) = -Derivative[2][th0][tt]
+    d/dt(Derivative[1][th0][tt]) = Derivative[2][th0][tt]
+R2  count: values whose time derivative fails to vanish when theta0'' = 0 = 0
+R2  under theta0 = w t + b00 the structure constants are: {-1, 1, -w, w}
+------------------------------------------------------------------------------
+R3  THE EXTENDED ALGEBRA
+------------------------------------------------------------------------------
+R3  count: Jacobi identity failures = 0
+R3  centre of the extended algebra = {3, 6}  (as v-indices)
+R3  derived algebra: dimension 4, spanned by the v-directions {1, 2, 4, 5}
+R3  the splitting  g = span{v3,v6} + span{A,v1,v2} + span{B,v4,v5},
+    with A = -(v0 + w v7)/w  and  B = v7 :
+R3  count: departures from R^2 (+) se(2) (+) se(2) = 0
+R3  count: [A, .] reaching the rotor block (0 = A commutes with v4, v5) = 0
+R3  at w = 0 the centre is {0, 1, 2, 3, 6}  so the algebra degenerates to R^5 (+) se(2)
+------------------------------------------------------------------------------
+R4  THE INDUCTANCE METRIC
+------------------------------------------------------------------------------
+R4  count: departures of g(v_a,v_b) from the array (7.2) = 0
+R4  count: entries of g(v_a,v_b) still carrying theta0(t) or theta = 0
+    so the reduced Lagrangian (7.3) is unchanged, with no explicit time in it.
+------------------------------------------------------------------------------
+R5  THE EQUATIONS OF MOTION
+------------------------------------------------------------------------------
+route (a), from the extended Hamel equation:
+    j = 1 :  ((2*Lls*w)/3 + Lms*w)*xi[2][t] + (2*Lls*Derivative[1][xi[1]][t])/3 + Lms*(w*xi[5][t] + Derivative[1][xi[1]][t] + Derivative[1][xi[4]][t])
+    j = 2 :  -1/3*((2*Lls + 3*Lms)*w*xi[1][t]) + (2*Lls*Derivative[1][xi[2]][t])/3 + Lms*(-(w*xi[4][t]) + Derivative[1][xi[2]][t] + Derivative[1][xi[5]][t])
+    j = 3 :  (Lls*Derivative[1][xi[3]][t])/3
+    j = 4 :  Lms*xi[2][t]*(w - xi[7][t]) + ((2*aa^2*Llr + 3*Lms)*xi[5][t]*(w - xi[7][t]) + 3*Lms*Derivative[1][xi[1]][t] + (2*aa^2*Llr + 3*Lms)*Derivative[1][xi[4]][t])/3
+    j = 5 :  -1/3*((2*aa^2*Llr + 3*Lms)*xi[4][t]*(w - xi[7][t])) + Lms*xi[1][t]*(-w + xi[7][t]) + Lms*Derivative[1][xi[2]][t] + ((2*aa^2*Llr + 3*Lms)*Derivative[1][xi[5]][t])/3
+    j = 6 :  (aa^2*Llr*Derivative[1][xi[6]][t])/3
+    j = 7 :  Lms*xi[2][t]*xi[4][t] - Lms*xi[1][t]*xi[5][t] + Jm*Derivative[1][xi[7]][t]
+route (b), from the Euler-Lagrange equations in the abc coordinates:
+    j = 1 :  ((2*Lls*w)/3 + Lms*w)*xi[2][t] + (2*Lls*Derivative[1][xi[1]][t])/3 + Lms*(w*xi[5][t] + Derivative[1][xi[1]][t] + Derivative[1][xi[4]][t])
+    j = 2 :  -1/3*((2*Lls + 3*Lms)*w*xi[1][t]) + (2*Lls*Derivative[1][xi[2]][t])/3 + Lms*(-(w*xi[4][t]) + Derivative[1][xi[2]][t] + Derivative[1][xi[5]][t])
+    j = 3 :  (Lls*Derivative[1][xi[3]][t])/3
+    j = 4 :  Lms*xi[2][t]*(w - xi[7][t]) + ((2*aa^2*Llr + 3*Lms)*xi[5][t]*(w - xi[7][t]) + 3*Lms*Derivative[1][xi[1]][t] + (2*aa^2*Llr + 3*Lms)*Derivative[1][xi[4]][t])/3
+    j = 5 :  -1/3*((2*aa^2*Llr + 3*Lms)*xi[4][t]*(w - xi[7][t])) + Lms*xi[1][t]*(-w + xi[7][t]) + Lms*Derivative[1][xi[2]][t] + ((2*aa^2*Llr + 3*Lms)*Derivative[1][xi[5]][t])/3
+    j = 6 :  (aa^2*Llr*Derivative[1][xi[6]][t])/3
+    j = 7 :  Lms*xi[2][t]*xi[4][t] - Lms*xi[1][t]*xi[5][t] + Jm*Derivative[1][xi[7]][t]
+R5  count: disagreements between the two routes = 0
+------------------------------------------------------------------------------
+R6  KRAUSE'S ARBITRARY REFERENCE FRAME
+------------------------------------------------------------------------------
+R6  count: departures of the Hamel equations from Krause's model = 0
+R6  count: departures at w = 0 from Theorem 7.3 of the manuscript = 0
+R6  the torque equation, which must not see the frame at all: Lms*xi[2][t]*xi[4][t] - Lms*xi[1][t]*xi[5][t] + Jm*Derivative[1][xi[7]][t]
+R6  count: frame rate w surviving in the torque equation = 0
+R6  the free machine, f = 0.  Stator phasor  (lqs + I lds) e^(-I w t) :
+R6  count: drift of the stator phasor (lqs + I lds) e^(-I w t) = 0
+R6  count: drift of the rotor phasor zeta = (lqr + I ldr) e^(I(theta - w t)) = 0
+R6  count: drift of the energy = 0
+R6  count: departures of the torque from (Lms/Del)(lqs ldr - lds lqr) = 0
+R6  the torque on the invariant level set = (-9*As*Az*Lms*Sin[ps - pz + thf[t]])/(6*Lls*Lms + aa^2*Llr*(4*Lls + 6*Lms))
+R6  count: frame rate w, or any explicit t beside the rotor angle, surviving = 0
+R6  count: departures from -kappa sin(theta - theta*), kappa = Lms As Az/Del = 0
+------------------------------------------------------------------------------
+R7  EULER-POINCARE ON THE EXTENDED ALGEBRA
+------------------------------------------------------------------------------
+R7  count: departures of the Hamel equations from  d(mu)/dt - ad*_xihat mu = f  = 0
+R7  the eighth (j = 0) equation reads  0 = 0
+R7  count: obstruction to the level xi^0 = 1 being preserved = 0
+------------------------------------------------------------------------------
+done.

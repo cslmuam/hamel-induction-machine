@@ -1,0 +1,59 @@
+------------------------------------------------------------------------------
+V1  IS THE CHANGE OF REFERENCE ANGLE AN AUTOMORPHISM OF g ?
+------------------------------------------------------------------------------
+V1  count: bracket pairs on which Psi(beta) fails to be an automorphism = 0
+V1  count: departures of Psi from a one-parameter group, Psi(b)Psi(c) = Psi(b+c) = 0
+V1  count: departures of Psi from orthogonality = 0
+------------------------------------------------------------------------------
+V2  THE GENERATOR D
+------------------------------------------------------------------------------
+V2  D sends v1 -> {0, -1, 0, 0, 0, 0, 0} and v4 -> {0, 0, 0, 0, -1, 0, 0}
+V2  count: Leibniz failures of D (0 confirms D is a derivation of g) = 0
+V2  solutions X of ad_X = D : {}
+V2  count: inner solutions (0 confirms D is an OUTER derivation) = 0
+V2  why: v1 and v2 are central in g, so ad_X(v1) = 0 for every X, while D(v1) = -v2.
+V2  count: departures of ad_X(v1) from 0 for a general X = 0
+V2  count: departures of D from antisymmetry, D* = -D (needed for Thm 8.7) = 0
+V2  count: departures of D from -ad_{v7} on span{v4,v5,v7} = 0
+------------------------------------------------------------------------------
+V3  THE EXTENDED BRACKET
+------------------------------------------------------------------------------
+V3  count: departures of [v0, v_a] from theta0'(t) D(v_a), a = 1..7 = 0
+V3  this holds for an ARBITRARY smooth theta0(t); no constancy is used.
+------------------------------------------------------------------------------
+V4  CLOSURE
+------------------------------------------------------------------------------
+V4  the structure functions carrying the index 0 are the entries of theta0'(t) D,
+    so the span is a Lie algebra iff theta0' is constant, and is then the
+    semidirect product  R (x)_{w D} g,  w = theta0'.
+V4  count: departures of the w-uniform bracket from the semidirect product = 0
+V4  count: departures of R (x)_{wD} g from R^2 (+) se(2) (+) se(2), A = -(v0+w v7)/w = 0
+------------------------------------------------------------------------------
+V5  THE EQUATIONS OF MOTION, theta0(t) ARBITRARY
+------------------------------------------------------------------------------
+V5  count: departures of g(v_a,v_b) from the array (6.2), theta0(t) arbitrary = 0
+V5  count: disagreements between the extended Hamel and Euler-Lagrange routes = 0
+V5  count: departures from Krause's model with w replaced by theta0'(t) = 0
+V5  count: theta0'' appearing anywhere in the equations of motion = 0
+------------------------------------------------------------------------------
+V6  EULER-POINCARE DRIVEN BY A CURVE IN Der(g)
+------------------------------------------------------------------------------
+V6  count: departures from  d(mu)/dt = ad*_xi mu + theta0'(t) D* mu + f = 0
+------------------------------------------------------------------------------
+V7  THE INTEGRALS
+------------------------------------------------------------------------------
+V7  count: drift of the stator phasor lambda_s e^(-I theta0(t)) = 0
+V7  count: drift of the rotor phasor lambda_r e^(I(theta - theta0(t))) = 0
+V7  count: drift of the energy = 0
+V7  the torque on the invariant level set = (-9*As*Az*Lms*Sin[ps - pz + thf[t]])/(6*Lls*Lms + aa^2*Llr*(4*Lls + 6*Lms))
+V7  count: theta0 surviving in it = 0
+V7  count: departures from -kappa sin(theta - theta*), kappa = Lms As Az/Del = 0
+------------------------------------------------------------------------------
+V8  CONJUGACY OF THE TWO DESCRIPTIONS
+------------------------------------------------------------------------------
+V8  count: departures of Psi from preserving the inductance array, Psi I Psi^T = I = 0
+V8  count: departures of the frame-to-frame map from Psi(theta0(t)) = 0
+V8  count: departures of mu_rot from Psi(theta0(t)) mu_stat = 0
+V8  count: failures of mu_rot to solve the driven equation when mu_stat solves the autonomous one = 0
+------------------------------------------------------------------------------
+done.

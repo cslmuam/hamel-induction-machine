@@ -1,0 +1,11 @@
+kappa = 259.86313499948443  theta_* = -0.24919094781777368  Ecal/kappa = -0.7958881893748047
+libration period = 0.11942949114658806
+F3 conjugacy error, uniform frame = 5.487069556915336*^-9
+F3 conjugacy error, varying frame = 2.741451642619321*^-9
+F2 drift |lambda_s| = 0.
+F2 drift zeta        = 4.2267632850662515*^-11
+F4 drift energy      = 1.1365273167029954*^-8
+F4 drift rot. charge = 1.993405995825981*^-10
+F4b Jcal(0) = 0.178 + 0.*I  range Jom/jsc = {-1., 0.9999999999834014}  range Im/jsc = {-0.9420684109285026, 1.0579315890232213}
+F3 ranges qs: {-0.9999969663718321, 0.9989789171702409}  qr stat: {0.393795545217978, 0.7538631930810996}
+written fig_synthetic_data.tex

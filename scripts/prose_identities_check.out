@@ -1,0 +1,31 @@
+W0  count: my K differs from the manuscript's array (3.1) = 0
+W1  count: row1 + i row2 differs from (2/3) e^{i beta} conj(w) = 0
+W3  count: sum w or sum w^2 failing to vanish = 0
+W2  count: phases(i,j) differing from phi_j - phi_i mod 2pi = 0
+W2  count: L_SR differing from (Lms/2)(e^{i th} conj(w) w^T + c.c.) = 0
+W5  count: L_S differing from (Lls + 3Lms/2) I - (Lms/2) 1 1^T = 0
+W5  count: K 1 differing from e3 = 0
+W5  count: K K^T differing from diag(2/3,2/3,1/3) = 0
+W4  k_s . L_SR . k_r = 0   k_s . L_SR . conj(k_r) = 2*Lms
+W4  count: those differing from 0 and 2 Lms = 0
+W4  count: 1^T L_SR and L_SR 1 failing to vanish = 0
+W4  count: the 6x6 electrical array differing from (6.2) for symbolic th0 and th = 0
+W6  count: K^{-T} differing from D^{-1} K = 0
+W6  count: z1 + i z2 differing from e^{i th0} conj(w).q = 0
+W7  count: X[z1 + i z2] differing from i (z1 + i z2) = 0
+W7  count: X[eta4] failing to vanish = 0
+W7  count: X differing from -(1/sqrt3) 1 x q = 0
+W8  count: lambda_qr + i lambda_dr differing from e^{-i th}(K1(th0)+iK2(th0)).p = 0
+W13 count: (xi1 - i xi2)(xi4 + i xi5) differing from [mur mus conj(ls) lr + Lms^2 conj(lr) ls - mur Lms|ls|^2 - mus Lms|lr|^2]/Del^2 = 0
+W13 count: its imaginary part differing from Im(conj(ls) lr)/Del = 0
+W14 count: (1/2)[Re(conj xi_s ls) + Re(conj xi_r lr)] differing from (mur|ls|^2+mus|lr|^2)/2Del - (Lms/Del)Re(conj ls lr) = 0
+W12 count: char poly differing from s^3 + 2 rho s^2 + (rho^2 + sg^2 + k lq) s + k(rho lq - sg ld) = 0
+W12 count: c1 c2 - c0 differing from 2 rho(rho^2+sg^2) + k(rho lq + sg ld) = 0
+W9  slip term from the rotor equation = (9*Aa*Lms*sg*v)/(6*Lls*Lms + aa^2*Llr*(4*Lls + 6*Lms))
+W9  count: slip term differing from +sg Lms Aa v/Del = 0
+W9  count: mechanical term J sg sgdot at TL=0 differing from -sg Lms Aa v/Del = 0
+W9  count: resistive part differing from -rh(mus/Del)|lamr - lam0|^2 = 0
+W10 count: frame components of -R qdot differing from -R K K^T xi = 0
+W10 count: copper loss R|qdot|^2 differing from (2/3)R(e1^2+e2^2)+(1/3)R e3^2 = 0
+W11 count: rho with R_r = (2/3) r differing from the classical r L_ss/(L_ss L_rr - L_M^2) = 0
+W11 count: rho with R_r = r equal to the classical value (0 = it is NOT) = 0

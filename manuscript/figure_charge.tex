@@ -1,0 +1,76 @@
+\documentclass[border=4pt,varwidth=17cm]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{txfonts}
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+\usepackage{calc}
+\setlength{\emergencystretch}{2em}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,angles,quotes,positioning}
+\input{fig_synthetic_data}
+
+
+%%% Standard macro conventions
+%%------------------------------------------------------------
+\renewcommand{\d}{{\rm d}}
+\newcommand{\D}{{\rm D}}
+\newcommand{\iiota}{\dot\iota}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\basis}[1][x]{\partial/\partial #1}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\g}{\mathfrak{g}}
+\newcommand{\se}{\mathfrak{se}}
+\newcommand{\Lie}[2]{\left[#1,#2\right]}
+\newcommand{\SE}{\mathrm{SE}}
+
+
+\begin{document}
+\centering
+\begin{tikzpicture}[x=1.30cm, y=1.05cm, line cap=round, >={Stealth[length=2.2mm]}]
+  \draw[black, ->] (-3.45,0) -- (3.65,0) node[right, font=\small] {$\vartheta-\vartheta_{*}$};
+  \draw[black, ->] (0,-2.75) -- (0,2.95) node[above, font=\small] {$\dot\vartheta\sqrt{J/\kappa}$};
+  \foreach \p/\l in {-3.1416/{-\pi}, -1.5708/{-\frac{\pi}{2}}, 1.5708/{\frac{\pi}{2}}, 3.1416/{\pi}}{
+    \draw[black] (\p,-0.07) -- (\p,0.07);
+    \node[font=\footnotesize, below=2pt, fill=white, inner sep=1pt] at (\p,-0.07) {$\l$};}
+  \foreach \y in {-2,-1,1,2}{
+    \draw[black] (-0.07,\y) -- (0.07,\y);
+    \node[font=\footnotesize, left=2pt, fill=white, inner sep=1pt] at (-0.07,\y) {$\y$};}
+  \draw[thick, black!80] plot[smooth] coordinates {\FFourUpOne};
+  \draw[thick, black!80] plot[smooth] coordinates {\FFourDnOne};
+  \draw[thick, black!80] plot[smooth] coordinates {\FFourUpTwo};
+  \draw[thick, black!80] plot[smooth] coordinates {\FFourDnTwo};
+  \draw[thick, black!80] plot[smooth] coordinates {\FFourUpThree};
+  \draw[thick, black!80] plot[smooth] coordinates {\FFourDnThree};
+  \draw[very thick, black] plot[smooth] coordinates {\FFourUpFour};
+  \draw[very thick, black] plot[smooth] coordinates {\FFourDnFour};
+  \draw[thick, black!50] plot[smooth] coordinates {\FFourUpFive};
+  \draw[thick, black!50] plot[smooth] coordinates {\FFourDnFive};
+  \draw plot[only marks, mark=*, mark size=1.3pt] coordinates {\FFourTraj};
+  \node[font=\small] at (0,-3.25) {(a)};
+\end{tikzpicture}\\[2mm]
+\begin{tikzpicture}[x=9.0cm, y=1.7cm, line cap=round, >={Stealth[length=2.2mm]}]
+  \draw[gray!50, dashed] (0,0) -- (1.0,0);
+  \draw[black, ->] (0,-1.15) -- (1.06,-1.15) node[right, font=\small] {$t$};
+  \draw[black, ->] (0,-1.15) -- (0,1.22);
+  \foreach \p/\l in {0/{0}, 0.5/{T}, 1.0/{2T}}{
+    \draw[black] (\p,-1.15) -- (\p,-1.10);
+    \node[font=\footnotesize, below] at (\p,-1.15) {$\l$};}
+  \foreach \y/\l in {-1/{-1}, -0.5/{-\frac{1}{2}}, 0/{0}, 0.5/{\frac{1}{2}}, 1/{1}}{
+    \draw[black] (0,\y) -- (0.012,\y);
+    \node[font=\footnotesize, left] at (0,\y) {$\l$};}
+  \draw[thick, black] plot coordinates {\FFourJom};
+  \draw[thick, black!45] plot coordinates {\FFourImz};
+  \draw[very thick, black, dashed] plot coordinates {\FFourSum};
+  \foreach \y/\s/\l in {0.8/{thick, black}/{J\dot\vartheta}, 0.4/{thick, black!45}/{\mathrm{Im}(\bar z\zeta)},
+                        0.0/{very thick, black, dashed}/{\mathcal{J}}}{
+    \begingroup\edef\x{\endgroup\noexpand\draw[\s]}\x (1.08,\y) -- (1.18,\y);
+    \node[font=\footnotesize, right=2pt] at (1.18,\y) {$\l$};}
+  \node[font=\small] at (0.5,-1.65) {(b)};
+\end{tikzpicture}
+\end{document}
