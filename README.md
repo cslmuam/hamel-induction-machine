@@ -1,4 +1,4 @@
-# Reference frames as trivialisations in the Euler–Poincaré reduction of the induction machine
+# Euler–Poincaré reduction and moving trivialisations for the qd0 induction machine
 
 Computational supplement to the article of the same title by César S. López-Monsalvo, Irvin
 López-García and David Decena-Ortega (Universidad Autónoma Metropolitana – Azcapotzalco),
